@@ -28,7 +28,7 @@ python train_semisup.py --dataset IPSS \
     --log_dir './saved/resnet101/gf-1/test.log' \
     --Test True \
     --alpha 0.8 \
-    --memco 0.5 \
+    --memco 0.4 \
     --output_dim 32 \
     --Test True 
 
@@ -44,7 +44,7 @@ python train_semisup.py --dataset IPSS \
     --mask_path "./data/datagf/gf600-2/test/gtfine/" \
     --log_dir './saved/resnet101/gf-2/test.log' \
     --Test True \
-    --alpha 0.7 \
-    --memco 0.5 \
+    --alpha 0.9 \
+    --memco 0.7 \
     --output_dim 64 \
     --Test True 
