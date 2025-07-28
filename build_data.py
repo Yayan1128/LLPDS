@@ -480,7 +480,7 @@ class BuildDataset(Dataset):
 
             return image, label.squeeze(0),image_id
 
-        if self.dataset == 'gf':
+        if self.dataset == 'IPSS':
             sp =  self.idx_list[index].strip().split(' ')
             # print(sp)
             # self.idx_list[index]=self.idx_list[index].strip().spilt(' ')
@@ -563,33 +563,29 @@ class BuildDataLoader:
             # self.scale_size = (1, 1)
             self.batch_size = 2
             if num_labels==5:
-                self.data_path = '/home/wyy/PycharmProjects/ss/CRACK500/crack-0.25/'
+                self.data_path = '/home/wyy/PycharmProjects/ss/pavement/LLPDS/data/crack-0.25/'
             if num_labels==19:
-                self.data_path = '/home/wyy/PycharmProjects/ss/CRACK500/crack-1/'
+                self.data_path = '/home/wyy/PycharmProjects/ss/pavement/LLPDS/data/crack-1/'
             if num_labels==38:
-                self.data_path = '/home/wyy/PycharmProjects/ss/CRACK500/crack-2/'
-            if num_labels==95:
-                self.data_path = '/home/wyy/PycharmProjects/ss/CRACK500/crack-5/'
-            if num_labels==190:
-                self.data_path = '/home/wyy/PycharmProjects/ss/CRACK500/crack-10/'
+                self.data_path = '/home/wyy/PycharmProjects/ss/pavement/LLPDS/data/crack-2/'
+         
             self.train_l_idx, self.train_u_idx = get_pascal_idx(self.data_path, train=True, label_num=num_labels)
             self.val_idx, self.test_idx = get_pascal_idx(self.data_path, train=False)
 
-        if dataset == 'gf':
+        if dataset == 'IPSS':
             self.im_size = [256, 256]
             self.crop_size = [256, 256]
             self.num_segments = 2
             self.scale_size = (0.5, 1.5)
             # self.scale_size = (1, 1)
             self.batch_size = 2
+            if num_labels == 2:
+                self.data_path = '/home/wyy/PycharmProjects/ss/pavement/LLPDS/data/datagf/gf600-0.25/'
             if num_labels == 6:
-                self.data_path = '/mnt/fast/nobackup/scratch4weeks/yw01954/semi-med/pavement/datagf/datagf/gf600-1/'
+                self.data_path = '/home/wyy/PycharmProjects/ss/pavement/LLPDS/data/datagf/gf600-1/'
             if num_labels == 12:
-                self.data_path = '/mnt/fast/nobackup/scratch4weeks/yw01954/semi-med/pavement/datagf/datagf/gf600-2/'
-            if num_labels == 30:
-                self.data_path = '/mnt/fast/nobackup/scratch4weeks/yw01954/semi-med/pavement/datagf/datagf/gf600-5/'
-            if num_labels == 60:
-                self.data_path = '/mnt/fast/nobackup/scratch4weeks/yw01954/semi-med/pavement/datagf/datagf/gf600-10/'
+                self.data_path = '/home/wyy/PycharmProjects/ss/pavement/LLPDS/data/datagf/gf600-2/'
+        
             self.train_l_idx, self.train_u_idx = get_pascal_idx(self.data_path, train=True, label_num=num_labels)
             self.val_idx, self.test_idx = get_pascal_idx(self.data_path, train=False)
 
