@@ -1,5 +1,5 @@
 #0.25%
-python train_semisup.py --dataset gf \
+python train_semisup.py --dataset IPSS \
     --num_labels 2 \
     --apply_aug classmix \
     --apply_icc \
@@ -16,7 +16,7 @@ python train_semisup.py --dataset gf \
     --Test True 
 
 ##1%
-python train_semisup.py --dataset gf \
+python train_semisup.py --dataset IPSS \
     --num_labels 6 \
     --apply_aug classmix \
     --apply_icc \
@@ -33,7 +33,7 @@ python train_semisup.py --dataset gf \
     --Test True 
 
 # #2%
-python train_semisup.py --dataset gf \
+python train_semisup.py --dataset IPSS \
     --num_labels  12 \
     --apply_aug classmix \
     --apply_icc \
