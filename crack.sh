@@ -4,7 +4,7 @@ python train_semisup.py --dataset crack \
         --num_labels 5 \
         --apply_aug classmix \
         --apply_icc   \
-        --memco 0.5 \
+        --memco 0.3 \
         --snapshot_path   ./saved/resnet101/crack-0.25  \
         --model_path './saved/resnet101/crack-0.25/model/model_best.pth'  \
        --binary_score_map_path  "./saved/resnet101/crack-0.25/pred/"  \
