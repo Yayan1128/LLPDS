@@ -35,7 +35,7 @@ bash gf.sh
 
 After training and testing, the checkpoints and test results will be saved in the path `saved'.
 
-> We invite all to contribute to making it more accessible and useful. If you have any questions or suggestions about our work, feel free to contact me via e-mail [wangyanyan_neu@163.com](mailto:wangyanyan_neu@163.com)
+> We invite all to contribute to making it more accessible and useful. If you have any questions or suggestions about our work, feel free to contact me via e-mail wangyanyan_neu@163.com.
 ## Reference
 You may want to cite:
 ```
