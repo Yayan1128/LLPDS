@@ -52,7 +52,7 @@ You may want to cite:
 
 
 
-### License
+## License
 
 Code in this repo is for non-commercial use only.
 
