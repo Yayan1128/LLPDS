@@ -13,7 +13,7 @@ The pavement defect datasets, along with the checkpoints and test results of our
 
 | Dataset | Partition protocol | Checkpoints & Test results |
 |-------|-------| -  |
-| Crack500 | [GoogleDrive](https://drive.google.com/drive/folders/1UUrhhteZS7DppAnk8FvMN2BED112soh0?usp=sharing) | , [GoogleDrive](https://drive.google.com/drive/folders/1zf36hd-Ppoox6whf81IW45MOIqkLJ7KV?usp=sharing) |
+| Crack500 | [GoogleDrive](https://drive.google.com/drive/folders/1UUrhhteZS7DppAnk8FvMN2BED112soh0?usp=sharing) |  [GoogleDrive](https://drive.google.com/drive/folders/1zf36hd-Ppoox6whf81IW45MOIqkLJ7KV?usp=sharing) |
 |IPSS |[GoogleDrive](https://drive.google.com/drive/folders/1LrK6_yiYzBReWctseBZzCtJch_avb5ie?usp=sharing) | [GoogleDrive](https://drive.google.com/drive/folders/1PZwxZ4wauj2ic25v8QqY1k7_gUOjwH3O?usp=sharing) |
 
 
@@ -35,8 +35,7 @@ bash gf.sh
 
 After training and testing, the checkpoints and test results will be saved in the path `saved'.
 
-> We invite all to contribute to making it more accessible and useful. If you have any questions or suggestions about our work, feel free to contact me via e-mail [wangyanyan_neu@163.com](mailto:wangyanyan_neu@163.com). 
-
+> We invite all to contribute to making it more accessible and useful. If you have any questions or suggestions about our work, feel free to contact me via e-mail [wangyanyan_neu@163.com](mailto:wangyanyan_neu@163.com)
 ## Reference
 You may want to cite:
 ```
